@@ -1,6 +1,6 @@
 # Calculator
 
-A simple calculator written in vanilla JavaScript with a sort-of functional programming style. Currently uses an eval() to do the heavy lifting, with some helper functions to prevent operator buttons from being pressed twice in a row or clicked before a number.
+A simple calculator written in vanilla JavaScript with a sort-of functional programming style. Currently uses an eval() to do the heavy lifting, with some helper functions to prevent operator buttons from being pressed twice in a row or clicked before a number. Currently lives on https://hopeful-heyrovsky-88fef6.netlify.com.
 
 ## To do
 
