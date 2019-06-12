@@ -1,0 +1,83 @@
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+/*Reset styling*/
+html,
+body,
+nav,
+ul,
+ol,
+li,
+div,
+button,
+main {
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+}
+/* Typography*/
+@font-face {
+	font-family: system;
+	font-style: normal;
+	font-weight: 300;
+	src: local('.SFNSText-Light'), local('.HelveticaNeueDeskInterface-Light'), local('.LucidaGrandeUI'),
+		local('Ubuntu Light'), local('Segoe UI Light'), local('Roboto-Light'), local('DroidSans'), local('Tahoma');
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%; /*Sets base font size to 10px*/
+	font-family: 'system', Arial, Helvetica, sans-serif;
+}
+body {
+	height: 100%;
+}
+
+.container {
+	display: grid;
+	font-size: 2rem;
+	margin: 5rem auto;
+	grid-template-columns: 3em 3em 3em 3em;
+	grid-column-gap: 0.3rem;
+	grid-row-gap: 0.3rem;
+	max-width: 20rem;
+}
+.output {
+	border: solid 2px #000;
+	border-radius: 2px;
+	grid-column: 1 / span 4;
+	height: 3em;
+	padding-bottom: 0.75em;
+	padding-right: 0.2em;
+	padding-top: 0.75em;
+	text-align: right;
+}
+button {
+	background-color: rgb(173, 172, 172);
+	border: none;
+	border-radius: 2px;
+	font-size: 1em;
+	height: 3em;
+	transition: background-color 0.1s ease-in;
+	width: 3em;
+	/* TODO: add a bezier curve for the transition */
+}
+button:hover {
+	background-color: rgb(131, 131, 131);
+}
+
+/* Stylinng for the zero button */
+button:nth-child(18) {
+	grid-column: 1 / span 2;
+	width: 6em;
+}
+/* Mobile styling */
+@media (max-width: 400px) {
+	.container {
+		margin: 0.1rem auto;
+		max-width: 99%;
+		font-size: 2.5rem;
+	}
+}
