@@ -7,3 +7,4 @@ A simple calculator written in vanilla JavaScript with a sort-of functional prog
 - Make the website keyboard and screen reader accessible
 - Add a helper function to remove octal literals (010 becomes 10, 020 becomes 20, etc...).
 - Make the site responsive for all devices.
+- get rid of eval().
